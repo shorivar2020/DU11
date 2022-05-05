@@ -23,7 +23,7 @@ public class Main {
         //driver.get("https://moodle.fel.cvut.cz/local/kos/login.php?errorcode=4");
         driver.get("https://moodle.fel.cvut.cz/auth/shibboleth/index.php");
         driver.findElement(By.id("username")).sendKeys("shorivar");
-        driver.findElement(By.id("password")).sendKeys("3400789ma-");
+        driver.findElement(By.id("password")).sendKeys("123456");
         WebElement login = driver.findElement(By.name("_eventId_proceed"));
         JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
         javascriptExecutor.executeScript("arguments[0].click();",login);
